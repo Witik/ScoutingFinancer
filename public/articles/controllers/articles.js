@@ -59,6 +59,6 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$st
     };
 
     $scope.isAuthenticated = function () {
-        return $scope.global.user.hasRole('Admin') || $scope.global.user._id === $scope.article.user._id;
+        return $scope.global.user.hasRole('admin') || $scope.global.user._id === $scope.article.user._id;
     };
 }]);
